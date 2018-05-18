@@ -1,18 +1,24 @@
 {
-    "description": "git commit时，自动使用phpcs-fixer格式化代码",
     "name": "xianlife/composer-phpcs-git-plugin",
+    "description": "composer-phpcs-git-plugin",
     "type": "composer-plugin",
-    "license": "MIT",
-    "minimum-stability": "dev",
     "require": {
-        "composer-plugin-api": "^1.0",
-        "friendsofphp/php-cs-fixer": "^2.0"
+        "composer-plugin-api": "^1.1",
+        "friendsofphp/php-cs-fixer": "^2.11"
     },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sunjiuchen",
+            "email": "sunjiuchen@xianlife.com"
+        }
+    ],
+    "minimum-stability": "dev"
     "autoload": {
         "psr-4": {
             "xianlife\\composer\\": "src/"
         }
-    },    
+    },
     "extra": {
         "class": "xianlife\\composer\\PhpcsPlugin"
     }
