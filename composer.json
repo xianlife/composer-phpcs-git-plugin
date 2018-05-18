@@ -2,6 +2,8 @@
     "description": "git commit时，自动使用phpcs-fixer格式化代码",
     "name": "xianlife/composer-phpcs-git-plugin",
     "type": "composer-plugin",
+    "license": "MIT",
+    "minimum-stability": "stable",
     "require": {
         "composer-plugin-api": "^1.0",
         "friendsofphp/php-cs-fixer": "^2.0"
@@ -10,8 +12,7 @@
         "psr-4": {
             "xianlife\\composer\\": "src/"
         }
-    },
-    "minimum-stability": "stable",
+    },    
     "extra": {
         "class": "xianlife\\composer\\PhpcsPlugin"
     }
