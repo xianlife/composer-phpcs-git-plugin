@@ -3,7 +3,7 @@
     "name": "xianlife/composer-phpcs-git-plugin",
     "type": "composer-plugin",
     "license": "MIT",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "composer-plugin-api": "^1.0",
         "friendsofphp/php-cs-fixer": "^2.0"
