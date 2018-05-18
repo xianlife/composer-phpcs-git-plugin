@@ -1,0 +1,1 @@
+# composer-phpcs-git-plugin
