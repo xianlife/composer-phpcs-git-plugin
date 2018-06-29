@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-
 PROJECT=$(git rev-parse --show-toplevel)
 cd $PROJECT
 SFILES=$(git diff --cached --name-only --diff-filter=ACMR HEAD | grep \\.php)
-TMP_DIR=$PROJECT."/tmp"
 
 # Determine if a file list is passed
 if [ "$#" -ne 0 ]
@@ -38,8 +36,6 @@ if $HAS_PHP_CS_FIXER; then
     done
 else
     echo ""
-    echo "php-cs-fixer was not found, please run:"
-    echo ""
-    echo "  composer update --dev"
+    echo "php-cs-fixer was not found, please install it"
     echo ""
 fi

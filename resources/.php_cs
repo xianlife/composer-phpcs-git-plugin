@@ -1,8 +1,8 @@
 /**
-* 将本文件放置在项目根目录下（文件名为 .php_cs
+* 将本文件放置在项目根目录下（文件名为 .php_cs)
 */
-<?php
 return PhpCsFixer\Config::create()
+    ->setUsingCache(false)
     ->setRules([
         "@Symfony" => true,
         'array_syntax' => array('syntax' => 'short'),
